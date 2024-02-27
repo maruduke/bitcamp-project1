@@ -6,14 +6,17 @@
 
 ## 프로젝트 소개
 
-1. 지하철 게임
-   ![1-1](image/subway/1.png)
+### 1. 지하철 게임
 
-2. 턴제 게임
-   ![2-1](image/turn_based/1.png)
+![1-1](image/subway/1.png)
 
-3. 마피아 게임
-   ![3-1](image/mafia/1.png)
+### 2. 턴제 게임
+
+![2-1](image/turn_based/1.png)
+
+### 3. 마피아 게임
+
+![3-1](image/mafia/1.png)
 
 ## ⚙ 개발환경
 
