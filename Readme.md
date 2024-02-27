@@ -16,6 +16,7 @@
 
 <p align= "center">
     <img src="image/turn_based/1.png" width="70%">
+    <img src="image/turn_based/2.png" width="70%">
 </p>
 
 ### 3. 마피아 게임
