@@ -1,6 +1,6 @@
 ## Mini Game Project
 
-3가지의 미니게임의 2명이서 짝을 지어서 구현을 목표로 하였습니다.
+3가지의 미니게임의 2명이서 짝을 지어서 게임을 구현하는 것을 목표로 하였습니다.
 
 ![view](image/1.png)
 
@@ -8,15 +8,21 @@
 
 ### 1. 지하철 게임
 
-![1-1](image/subway/1.png)
+<p align= "center">
+    <img src="image/subway/1.png" width="70%">
+</p>
 
 ### 2. 턴제 게임
 
-![2-1](image/turn_based/1.png)
+<p align= "center">
+    <img src="image/turn_based/1.png" width="70%">
+</p>
 
 ### 3. 마피아 게임
 
-![3-1](image/mafia/1.png)
+<p align= "center">
+    <img src="image/mafia/1.png" width="70%">
+</p>
 
 ## ⚙ 개발환경
 
