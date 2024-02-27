@@ -40,6 +40,6 @@
 
 ### 지하철 게임(서주원, 정범수)
 
-### 턴제 게임(정종욱, 이경석)
+### ![턴제 게임(정종욱, 이경석)](https://github.com/maruduke/bitcamp-project1/blob/main/Turn-based/Readme.md)
 
 ### 마피아 게임(김강현, 김융)
