@@ -6,6 +6,8 @@
 
 ## 프로젝트 소개
 
+상세 구현 내용은 상세 기능 참조
+
 ### 1. 지하철 게임
 
 <p align= "center">
@@ -18,6 +20,10 @@
     <img src="image/turn_based/1.png" width="70%">
     <img src="image/turn_based/2.png" width="70%">
 </p>
+
+```
+2명의 player가
+```
 
 ### 3. 마피아 게임
 
@@ -40,6 +46,6 @@
 
 ### 지하철 게임(서주원, 정범수)
 
-### ![턴제 게임(정종욱, 이경석)](https://github.com/maruduke/bitcamp-project1/blob/main/Turn-based/Readme.md)
+### [턴제 게임(정종욱, 이경석)](https://github.com/maruduke/bitcamp-project1/blob/main/Turn-based/Readme.md)
 
 ### 마피아 게임(김강현, 김융)
