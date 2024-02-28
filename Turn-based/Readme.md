@@ -33,7 +33,7 @@
 | data                | dataType | description       |
 | ------------------- | -------- | ----------------- |
 | Id                  | number   | 구별자            |
-| position            | varchar  | 직업 ex) Warrior  |
+| position            | varchar  | 직업 ex\) Warrior |
 | max_hp              | number   | hp 총량           |
 | max_pp              | number   | MP 총량           |
 | basic_attack_point  | number   | 공격력            |
@@ -64,9 +64,10 @@ Enemy 테이블의 경우 전반적으로 Player테이블과 동일하나 직업
 
 ## Server 역할
 
-<p align="center">
-    <img src="../image/turn_based/5.png" width="80%">
-</p>
+1. DB 연결부
+ <p align="center">
+     <img src="../image/turn_based/5.png" width="80%">
+ </p>
 
 -   서버는 DB에서 데이터를 받아와 Stat 클래스 내의 필드 값에 전부 저장된다.
 -   해당 데이터는 3계층의 추상 클래스로 구성되어 있다. 최상위 추상 클래스인 Character에 DB에서 가져온 `캐릭터의 기본적인 정보`와 상속받을 player와 enemy의 `공통된 메서드(데미지 처리, 회복, 강화, 캐릭터 사망 체크 등...)`가 정의되어 있다.
@@ -78,14 +79,23 @@ Enemy 테이블의 경우 전반적으로 Player테이블과 동일하나 직업
 -   3계층은 실제 클래스로 해당 구조를 통해 새로운 Enemy나 Player를 만들어 낼 경우 `상속을 받은 후 기술 메서드만 정의`하는 것으로 간단히 구현할 수 있다.
 
 -   위의 설명한 객체들은 아래 그림의 `Factory 클래스`를 통해서 간단히 생성할 수 있다.
-<p align="center">
-    <img src="../image/turn_based/6.png" width="70%">
-</p>
 
--   팩토리 클래스를 통해 EnemyFactory는 랜덤 값을 입력받아서 PlayerFactory는 사용자가 입력한 Position 정보에 따라 새로운 Enemy, Player 객체가 생성됨.
+2. Player, Enemy 객체 생성
+ <p align="center">
+     <img src="../image/turn_based/6.png" width="70%">
+ </p>
 
-<p align="center">
-    <img src="../image/turn_based/server.gif" width="70%">
-</p>
+-   팩토리 클래스를 통해 EnemyFactory는 랜덤 값을 입력받아서 PlayerFactory는 사용자가 입력한 Position 정보에 따라 다양한 종류의 Enemy, Player 객체가 생성됨.
+
+3. Server와 Client 통신
+    <p align="center">
+        <img src="../image/turn_based/server.gif" width="70%">
+    </p>
+
+    1. Player1 이 서버와 통신을 시작하면 서버는 List에 소켓 정보를 저장하고 대기한다.
+    2. Player2 가 서버와 통신한다면 서버는 마찬가지로 List에 소켓 정보를 저장한다.
+    3. 게임을 시작하기 위한 2명의 Player를 들어왔음을 확인 후 게임을 시작하기 위해 `새로운 Game로직을 담고 있는 Thread`를 생성한다.
+    4. 해당 Thread에 연결된 2명의 Player의 소켓 정보를 넘겨주고 게임을 실행하여 클라이언트와 소통을 담당한다.
+    5. 서버는 소켓 정보를 저장하고 있는 리스트를 비우고 다른 클라이언트의 접근을 대기한다.
 
 ## Game Logic 역할
