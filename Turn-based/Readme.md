@@ -33,7 +33,7 @@
 | data                | dataType | description       |
 | ------------------- | -------- | ----------------- |
 | Id                  | number   | 구별자            |
-| position            | varchar  | 직업 Ex) Warrior  |
+| position            | varchar  | 직업 ex) Warrior  |
 | max_hp              | number   | hp 총량           |
 | max_pp              | number   | MP 총량           |
 | basic_attack_point  | number   | 공격력            |
@@ -65,15 +65,24 @@ Enemy 테이블의 경우 전반적으로 Player테이블과 동일하나 직업
 ## Server 역할
 
 <p align="center">
-    <img src="../image/turn_based/5.png" width="70%">
+    <img src="../image/turn_based/5.png" width="80%">
 </p>
 
 -   서버는 DB에서 데이터를 받아와 Stat 클래스 내의 필드 값에 전부 저장된다.
--   해당 데이터는 3계층의 추상 클래스로 구성되어 있다. 최상위 추상 클래스인 Character에 DB에서 가져온 `캐릭터의 기본적인 정보`와 상속받을 player와 enemy의 `공통된 메서드(데미지 처리, 회복, 강화 등...)`가 정의되어 있다.
+-   해당 데이터는 3계층의 추상 클래스로 구성되어 있다. 최상위 추상 클래스인 Character에 DB에서 가져온 `캐릭터의 기본적인 정보`와 상속받을 player와 enemy의 `공통된 메서드(데미지 처리, 회복, 강화, 캐릭터 사망 체크 등...)`가 정의되어 있다.
 
+-   2계층에서는 `Enemy, Player 추상 클래스 2가지로 분화`된다. Enemy 클래스는 activate 메서드를 가지고 있다. 해당 메서드는 행동할 경우 실행되며 비슷한 기능을 Player도 가지고 있지만 서로 타겟 이 되는 대상이 다르므로 메서드를 분리하였다.
+
+-   Player계층은 `서버와 클라이언트의 연결 정보`인 Socket 필드 값을 추가로 가지고 있다.
+
+-   3계층은 실제 클래스로 해당 구조를 통해 새로운 Enemy나 Player를 만들어 낼 경우 `상속을 받은 후 기술 메서드만 정의`하는 것으로 간단히 구현할 수 있다.
+
+-   위의 설명한 객체들은 아래 그림의 `Factory 클래스`를 통해서 간단히 생성할 수 있다.
 <p align="center">
     <img src="../image/turn_based/6.png" width="70%">
 </p>
+
+-   팩토리 클래스를 통해 EnemyFactory는 랜덤 값을 입력받아서 PlayerFactory는 사용자가 입력한 Position 정보에 따라 새로운 Enemy, Player 객체가 생성됨.
 
 <p align="center">
     <img src="../image/turn_based/server.gif" width="70%">
