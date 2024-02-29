@@ -50,18 +50,18 @@
 
 ### 💻 Client Development
 
-#### Language
+-   Language
 
-<img src="https://img.shields.io/badge/java-007396?style=for-the-badge&logo=openjdk&logoColor=white">
+      <img src="https://img.shields.io/badge/java-007396?style=for-the-badge&logo=openjdk&logoColor=white">
 
 ### 🌐 Backend Development
 
-#### Language
+-   Language
 
- <img src="https://img.shields.io/badge/java-007396?style=for-the-badge&logo=openjdk&logoColor=white">
- 
-#### Database
-<img src="https://img.shields.io/badge/mySQL-4479A1?style=for-the-badge&logo=mySQL&logoColor=white">
+      <img src="https://img.shields.io/badge/java-007396?style=for-the-badge&logo=openjdk&logoColor=white">
+
+-   Database  
+     <img src="https://img.shields.io/badge/mySQL-4479A1?style=for-the-badge&logo=mySQL&logoColor=white">
 
 ### 🔁 Collaboration tool
 
