@@ -61,11 +61,13 @@
  <img src="https://img.shields.io/badge/java-007396?style=for-the-badge&logo=openjdk&logoColor=white" height="38" width="11%">
  
 #### Database
-<img src="https://img.shields.io/badge/mySQL-4479A1?style=for-the-badge&logo=mySQL&logoColor=white" height="38" width="14%">
+<img src="https://img.shields.io/badge/mySQL-4479A1?style=for-the-badge&logo=mySQL&logoColor=white" height="38" width="13%">
 
 ### 🔁 Collaboration tool
 
 <img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=Discord&logoColor=white" height="38" width="18%">
+
+<img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=Git&logoColor=white" height="38" width="10%">
 
 ## 📌 상세 기능 설명
 
