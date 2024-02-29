@@ -52,16 +52,16 @@
 
 #### Language
 
-<img src="https://img.shields.io/badge/java-007396?style=for-the-badge&logo=openjdk&logoColor=white" height="38" width="18%">
+<img src="https://img.shields.io/badge/java-007396?style=for-the-badge&logo=openjdk&logoColor=white" height="38" width="15%">
 
 ### 🌐 Backend Development
 
 #### Language
 
- <img src="https://img.shields.io/badge/java-007396?style=for-the-badge&logo=openjdk&logoColor=white" height="38" width="18%">
+ <img src="https://img.shields.io/badge/java-007396?style=for-the-badge&logo=openjdk&logoColor=white" height="38" width="15%">
  
 #### Database
-<img src="https://img.shields.io/badge/mySQL-4479A1?style=for-the-badge&logo=mySQL&logoColor=white" height="38" width="18%">
+<img src="https://img.shields.io/badge/mySQL-4479A1?style=for-the-badge&logo=mySQL&logoColor=white" height="38" width="16%">
 
 ### 🔁 Collaboration tool
 
