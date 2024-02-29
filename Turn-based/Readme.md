@@ -8,9 +8,26 @@
 -   Server는 Client와 통신하며 턴제 게임 로직을 수행하는 Thread와 통신
 -   DB는 player와 monster에 대한 기본적인 정보를 저장함
 
-## 기여
+## 역할 분담
 
-## Client 역할(정종욱)
+### 정종욱
+
+-   Client
+    -   Server와 Client사이의 전송할 JSON 통신 담당
+-   Server
+    -   서버에서 클라이언트로 전송되는 Message 관리
+-   DB
+    -   Player, Enemy Table 생성 및 데이터 추가
+    -   Server와 DB 연결 및 데이터 매핑
+
+### 이경석
+
+-   Server
+    -   Client와 Server의 접속 관리
+    -   서버 데이터 저장 구조 설계
+    -   게임 로직 생성 및 Thread 관리
+
+## 🖥️ Client
 
 <p align="center">
     <img src="../image/turn_based/4.png" width="70%">
@@ -24,7 +41,7 @@
 
 2.  클라이언트는 서버로 닉네임과 직업 설정을 최초로 입력받고 게임이 시작되면 player 캐릭터의 행동을 지시하는 Command 정보를 자신의 턴에 입력한다.
 
-## DB 역할(정종욱)
+## 🛢 DB
 
 ![view](../image/turn_based/DB_1.png)
 
@@ -64,7 +81,7 @@ Enemy 테이블의 경우 전반적으로 Player테이블과 동일하나 직업
 | tech3               | varchar  | 기술명3           |
 | tech4               | varchar  | 기술명4           |
 
-## Server 역할(이경석)
+## 🗄️ Server
 
 1. DB 연결부
  <p align="center">
@@ -112,5 +129,29 @@ Enemy 테이블의 경우 전반적으로 Player테이블과 동일하나 직업
 
 ## Game Logic
 
--   게임 로직은 Thread를 Runnable을 상속 받아 멀티 쓰레드로서 작동하게 된다.
--   서버에서 연결된 2명의 Player의 소켓 정보를 매개 변수로 받는다.
+-   게임 로직은 Thread 내부에서 실행되어 멀티 쓰레드로서 작동하게 된다.
+-   `2명의 Player의 소켓 정보`를 입력 받는다.
+
+```java
+class GameStart implements Runnable {
+    List<Socket> sockets;
+    Game poketmon;
+    public GameStart(List<Socket> sockets, Poketmon poketmon) {
+        this.sockets = sockets;
+        this.poketmon = poketmon;
+    }
+
+    @Override
+    public void run() {
+        try {
+            poketmon.enterRoom(sockets); // 2명의 Player 소켓 정보를 입력
+            poketmon.start();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+-   Player1 -> Monster -> Player2 -> Monster 순으로 행동을 반복한다.
+-   플레이어 전멸하거나 몬스터가 HP가 0이 될 때 게임을 종료하며 승패에 따라 결과가 반환된다.
