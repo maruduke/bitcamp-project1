@@ -63,6 +63,10 @@
 #### Database
 <img src="https://img.shields.io/badge/mySQL-4479A1?style=for-the-badge&logo=mySQL&logoColor=white" height="40" width="14%">
 
+#### collaboration tool
+
+<img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=Discord&logoColor=white" height="40" width="14%">
+
 ## 📌 상세 기능 설명
 
 ### [지하철 게임(서주원, 정범수)](https://github.com/maruduke/bitcamp-project1/blob/main/SubwayGame/Readme.md)
