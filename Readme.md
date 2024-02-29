@@ -46,16 +46,16 @@
 
 #### Language
 
-<img src="https://img.shields.io/badge/java-007396?style=for-the-badge&logo=openjdk&logoColor=white" height="30" width="40%">
+<img src="https://img.shields.io/badge/java-007396?style=for-the-badge&logo=openjdk&logoColor=white" height="15" width="20%">
 
 ### 🌐 Backend Development
 
 #### Language
 
- <img src="https://img.shields.io/badge/java-007396?style=for-the-badge&logo=openjdk&logoColor=white" height="35" width="40%">
+ <img src="https://img.shields.io/badge/java-007396?style=for-the-badge&logo=openjdk&logoColor=white" height="40" width="20%">
  
 #### Database
-<img src="https://img.shields.io/badge/mySQL-4479A1?style=for-the-badge&logo=mySQL&logoColor=white" height="30" width="30%">
+<img src="https://img.shields.io/badge/mySQL-4479A1?style=for-the-badge&logo=mySQL&logoColor=white" height="35" width="20%">
 
 ## 📌 상세 기능 설명
 
