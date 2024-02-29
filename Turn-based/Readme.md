@@ -83,7 +83,7 @@ Enemy 테이블의 경우 전반적으로 Player테이블과 동일하나 직업
 
 ## 🗄️ Server
 
-1. DB 연결부
+1. DB 연결 데이터 저장 부분
  <p align="center">
      <img src="../image/turn_based/5.png" width="80%">
  </p>
@@ -109,7 +109,7 @@ Enemy 테이블의 경우 전반적으로 Player테이블과 동일하나 직업
 
 -   위의 설명한 객체들은 아래 그림의 `Factory 클래스`를 통해서 간단히 생성할 수 있다.
 
-1. Player, Enemy 객체 생성
+2. Player, Enemy 객체 생성
  <p align="center">
      <img src="../image/turn_based/6.png" width="70%">
  </p>
