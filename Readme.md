@@ -2,11 +2,14 @@
 
 3가지의 미니게임의 2명이서 짝을 지어서 게임을 구현하는 것을 목표로 하였습니다.
 
+네이버 클라우드 캠프 8기
+개발기간: 2024-02-19 ~ 2024-02-26(8일)
+
 ![view](image/1.png)
 
 ## 프로젝트 소개
 
-자세한 설명은 상세 기능 설명란을 참조
+자세한 설명은 상세 기능 설명란에서 각 항목을 참조
 
 ### 1. 지하철 노선 게임
 
@@ -37,16 +40,22 @@
 4. 밤에는 각자의 역할 수행 후 처리
 5. 각자의 승리 조건 중 하나가 만족할 때까지 3,4번 반복
 
-## ⚙ 개발환경
+## ⚙ 공통 개발환경
 
-### 💻 Client
+### 💻 Client Development
 
--   Language: JAVA(Console 출력문 사용)
+#### Language
 
-### 🌐 Backend
+<img src="https://img.shields.io/badge/java-007396?style=for-the-badge&logo=openjdk&logoColor=white" height="25">
 
--   Language: JAVA
--   Database: MySql
+### 🌐 Backend Development
+
+#### Language
+
+ <img src="https://img.shields.io/badge/java-007396?style=for-the-badge&logo=openjdk&logoColor=white" height="25">
+ 
+#### Database
+<img src="https://img.shields.io/badge/mySQL-4479A1?style=for-the-badge&logo=mySQL&logoColor=white" height="25">
 
 ## 📌 상세 기능 설명
 
