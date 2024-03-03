@@ -1,16 +1,20 @@
 ![image](https://github.com/maruduke/bitcamp-project1/assets/109501612/63aa6977-4047-4531-a88d-573fa21c2051)
+
 • 최대 2명의 Client가 Server에 접속
 • Client와 Server와 통신하며 지하철 역을 맞추는 로직 수행
 • DB에 1~9호선에 대한 호선과 역 이름을 저장
 
 역할 분담
+
 정범수
+
 • Server 
   Server -> Client로 전송되는 Message 관리
   게임 진행에 필요한 스레드 및 서버 측 시간제한 기능 구현
   
 • DB
   line_number(호선), station_name(역 이름) 데이터 저장
+
 
 서주원
 • Server
